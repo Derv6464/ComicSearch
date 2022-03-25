@@ -1,5 +1,6 @@
 # ComicSearch
-A tool to search every comic books characters apperances
+A tool to search every comic books characters appearances.
+This tool searches through comics to find the appearances of characters. It breaks the appearances into 4 categories, featured, supporting, villains and other. This enables the user to choose exactly how they want to read characters. It is also able to search for when 2 or more characters appear in a comic together
 
 #### Making the Project
 This is the full report on this project and how I made it
@@ -12,7 +13,7 @@ To start this project I web scrapped the links of every marvel comic. I then use
 
 Once I had all my data I cleaned it to get rid of any Null or irrelevant information. I began making the search function. I started by making a character selection area so people can choose the character they want. This is when I started to make the search system. I had some trouble adapting the search to include more than one character. I tried many way to do it and used pseudo-code to help me come up with the working solution 
 
-#### Improvments
+#### Improvements
 I think there are many ways to improve my code and I would like to expand the functionality of this project when I have a chance. 
 To improve this project I would like to:
 - Add a UI as this currently runs in a python terminal. 
