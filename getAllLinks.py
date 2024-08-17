@@ -8,7 +8,7 @@ def charLinks(url,f):
     if f:
         d = open("txt/characterLinks.txt","w")           #opening file to write links in
     else:
-        d = open("txt/characterLinks.txt","a")
+        d = open("txt/characterLinks.txt","a")           #openign file to append links in
     allAllLink = []                       #defining list for links to go in
     i = 0
     while url:                            #seeting up while loop
@@ -26,7 +26,6 @@ def charLinks(url,f):
         allLink = []
         for link in results.findAll('a'):
             allLink.append(link.get('href'))
-        
         
         allLink = list(dict.fromkeys(allLink))
         for a in allLink:
@@ -59,9 +58,9 @@ def charLinks(url,f):
 #comic links
 def comicLinks(url,f):
     if f:
-        d = open("txt/comicLinks.txt","w")           #opening file to write links in
+        d = open("comicLinks.txt","w")           #opening file to write links in
     else:
-        d = open("txt/comicLinks.txt","a")
+        d = open("comicLinks.txt","a")
     allAllLink = []                       #defining list for links to go in
     i = 0
     while url:                            #seeting up while loop
@@ -111,9 +110,9 @@ def comicLinks(url,f):
 #characters without the earth they are from
 def charNoEarthLinks(url,f):
     if f:
-        d = open("txt/characterLinks.txt","w")           #opening file to write links in
+        d = open("characterLinks.txt","w")           #opening file to write links in
     else:
-        d = open("txt/characterLinks.txt","a")
+        d = open("characterLinks.txt","a")
     allAllLink = []                       #defining list for links to go in
     i = 0
     while url:                            #seeting up while loop

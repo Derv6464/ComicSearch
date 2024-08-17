@@ -51,8 +51,10 @@ for k in range(len(list1)):
     for i in order:
         if i not in starts and i not in ends:        #get anything in bold isnt in the given list 
             notOrder.append(i)
-
-     
+    
+    #should be the same - need to test
+    #notOrder = [i for i in order if i not in starts and i not in ends]
+    
     order = [i for i in order if i not in notOrder]          #get rid of anything not in given list
 
     if len(order)<1:
@@ -105,8 +107,6 @@ for k in range(len(list1)):
     for i in types['Vilians:']:
         d.write(str(k) +"," + i + "\n")
         
-
-            
             
     if k%10 == 0:
         curTime = time.time()
@@ -114,9 +114,6 @@ for k in range(len(list1)):
         print(curElapsed)
         print(curElapsed/60)
         print(k)
-
-
-
 
 stop = time.time()
 elapsed = stop-start

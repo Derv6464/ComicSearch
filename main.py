@@ -2,7 +2,8 @@ import updateLinks
 import cleanLinks
 
 print("Do you want to full update[1] or only get new links[2]?")
-option = input()
+option = int(input())
+
 if option == 1:
     updateLinks.getFullUpdate()
 else:

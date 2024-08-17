@@ -9,16 +9,16 @@ def getFullUpdate():
     c.close() 
 
 def getNewUpdate():
-    c = open("txt/lastLink.txt","r")
+    c = open("lastLink.txt","r")
 
-    dataIn = f.read()
+    dataIn = c.read()
     finalLinks = dataIn.split("\n")
     c.close()
 
-    c = open("txt/lastLink.txt","w")
-    c.write(getAllLinks.charLinks(finalLinks[0]),False)
-    c.write(getAllLinks.comicLinks(finalLinks[1]),False)
-    c.write(getAllLinks.charNoEarthLinks(finalLinks[2]),False)
+    c = open("lastLink.txt","w")
+    c.write(getAllLinks.charLinks(finalLinks[0],False))
+    c.write(getAllLinks.comicLinks(finalLinks[1],False))
+    c.write(getAllLinks.charNoEarthLinks(finalLinks[2],False))
 
     c.close() 
 
