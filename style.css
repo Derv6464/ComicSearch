@@ -1,0 +1,205 @@
+/* styles */
+/* called by your view template */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+      background-color: #001021;
+      font-family: Verdana, Geneva, Tahoma, sans-serif ;
+      color:white;
+  }
+  h1 {
+      color:#F58A07;
+  }
+  h2{
+      color:#C1F7DC;
+      font-size: 35px;
+  }
+  .top ul {
+      list-style-type: none;
+      margin:0;
+      padding:0px;
+      overflow:hidden;
+      background-color: #001021;
+  }
+  .top li{
+      float: right;
+  }
+  .top li a{
+      display:block;
+      color:#D9DCD6;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      mix-blend-mode: screen;
+  }
+  .top li a:hover{
+      background-color: #08B2E3;
+      
+  }
+  
+  .top .active{
+      color: #C1F7DC;
+      text-decoration: underline;
+  }
+  
+  
+  .top li.dropdown {
+      display: inline-block;
+    }
+    
+  .top .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #001021;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+  .top .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+  .top .dropdown-content a:hover {background-color: #08B2E3;}
+    
+  .top .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  .column{
+        float: left;
+        width: 25%;
+        padding: 10px;
+    }
+  
+  .row:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+  @media screen and (max-width:600px){
+        .column{
+            width: 100%;
+        }
+  
+        .flex-container{
+            flex-direction: column;
+        }
+    }
+  
+  .fakeimg{
+        border-radius: 25px;
+        background-color: #F58A07;
+        width:100%;
+        padding: 10px;
+    }
+  
+  .card{
+        background-color: #C1F7DC;
+        padding: 30px;
+        margin-top: 20px;
+    }
+  
+  .column img{
+      border-radius: 25px;
+  }
+  
+  .container{
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  
+  .container .content{
+      position: absolute;
+      background: rgb(0,0,0);
+      background: rgba(0, 0, 0, 0.75);
+      top: 0%;
+      color: #D9DCD6;
+      width: 90%;
+      height:99%;
+      border-radius: 25px;
+      
+  }
+  
+  .container .content .textBox{
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      top: 50%;
+      left:30%;
+      color: #000000;
+  }
+  
+  .project .title{
+      color:#F58A07;
+      font-size: 60px;
+      
+  
+  }
+  
+  .project .intro{
+      color:#ffffff;
+      font-size: 23px;
+     
+  }
+  
+  .project .objective{
+      position: absolute;
+      background: #C1F7DC;
+      color:#001021;
+      width: 30%;
+      right:2.5%;
+      padding: 2%;
+      font-size: 23px;
+  }
+  
+  .container .titleCard{
+      position: absolute;
+      top: 0%;
+      color: #FF8811;
+      width: 90%;
+      height:99%;
+      border-radius: 25px;
+      padding-left: 5%;
+  }
+  
+  .flex-container{
+      display: flex;
+      flex-direction: row ;
+  }
+
+  
+  h3{
+      transform: translate(-50%);
+      white-space: nowrap;
+  }
+  
+  .resource{
+      color:#ffffff;
+      font-size: 21px;
+  }
+  h4{
+      color:#C1F7DC;
+      font-size: 23px;
+  }
+  
+  h5{
+      color:#FF8811;
+      font-size: 25px;
+  }
+  
+
+  .onPage{
+      text-decoration: underline;
+  }
+
+.link {
+    color:#FF8811;
+}
